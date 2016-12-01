@@ -1,6 +1,8 @@
 # Stories For...
 
-Some stories for [NaNoGenMo 2016](https://github.com/NaNoGenMo/2016).
+Some stories for [NaNoGenMo 2016](https://github.com/NaNoGenMo/2016). Written for Clara and Arthur.
+
+Sample `novel` in [output.txt](https://github.com/jeffk/stories-for/blob/master/output.txt).
 
 ## generate-small.py
 
