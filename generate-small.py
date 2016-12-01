@@ -22,11 +22,11 @@ template["future"] = env.get_template("story-short-future.jinja2")
 villains = {}
 
 villains["past"] = [
-		{"title": ["evil witch", "sorceress", "dark queen"],
-		"name": ["Esmerelda", "Zieba", "Deniza", "Gorna"],
+		{"title": ["evil witch", "sorceress", "dark queen", "faerie queen", "medusa", "elf queen", "fortune teller"],
+		"name": ["Esmerelda", "Zieba", "Deniza", "Gorna", "Zadriel", "Mistra", "Tazir", "Granatha"],
 		"p": "she"
 		},
-		{"title": ["evil wizard", "sorcerer", "dark knight", "vampire"],
+		{"title": ["evil wizard", "sorcerer", "dark knight", "vampire", "evil genie"],
 		"name": ["Grinzlok", "Fonkal", "Grisbit", "Neckbone", "Dark Cloak"],
 		"p": "he"
 		},
@@ -37,12 +37,12 @@ villains["past"] = [
 	]
 
 villains["present"] = [
-		{"title": ["evil spy", "thief", "burglar"],
-		"name": ["Vivian", "Esmerelda", "Margret", "Miss Demeanor", "Mary Contrary"],
+		{"title": ["evil spy", "thief", "burglar", "assassin", "gangster"],
+		"name": ["Devon Demeanor", "Vivian", "Esmerelda", "Margret", "Miss Demeanor", "Mary Contrary"],
 		"p": "she"
 		},
-		{"title": ["evil spy", "thief", "burglar"],
-		"name": ["Devon Demeanor", "Dillan Tangle", "Mr. Bigs", "Dr. Snaps", "Mr. Muscles"],
+		{"title": ["evil spy", "thief", "burglar", "assassin", "gangster"],
+		"name": ["Mr. Bad", "Mr. Bigs", "Dr. Snaps", "Mr. Muscles", "Professor Darkenhammer", "Senor Dirtnap", ""],
 		"p": "he"
 		}
 	]
@@ -57,7 +57,7 @@ villains["future"] = [
 		"p": "he"
 		},
 		{"title": ["robot"],
-		"name": ["Nixnod", "Shatter", "Smash", "Slam", "Dr. Eradicate"],
+		"name": ["Nixnod", "Shatter", "Smash", "Slam", "Eradicator"],
 		"p": "it"
 		},
 	]
@@ -76,42 +76,42 @@ for era in villains.keys():
 
 descriptions = ["happy", "carefree", "curious", "adventurous", "proper", "studious", "careful", "serious"]
 characters = [ [
-		{"name": ["Clara", "Irma", "Ashlee", "Lisa", "Jillian"],
+		{"name": ["Clara", "Irma", "Ashlee", "Lisa", "Jillian", "Aubrey", "Lisa", "Rebecca"],
 		"p": "she",
 		"gender": "girl",
 		"relation": "sister"
 		},
-		{"name": ["Arthur", "Alejandro", "Weslee", "Jeff", "Jackson"],
+		{"name": ["Arthur", "Alejandro", "Weslee", "Jeff", "Jackson", "Jake", "Don", "Donald"],
 		"p": "he",
 		"gender": "boy",
 		"relation": "brother"
 		}], [
-		{"name": ["Tessa"],
+		{"name": ["Tessa", "Clara"],
 		"p": "she",
 		"gender": "girl",
 		"relation": "cousin"
 		},
-		{"name": ["Lincoln"],
+		{"name": ["Lincoln", "Moriarty"],
 		"p": "he",
 		"gender": "boy",
 		"relation": "cousin"
 		}],[
-		{"name": ["Irma", "Nadia", "Deanna", "Crystal", "Autumn", "Susan", "Monica", "Max"],
+		{"name": ["Irma", "Nadia", "Deanna", "Crystal", "Autumn", "Susan", "Monica", "Max", "AJ", "Cindy", "Marsha", "Stephanie", "Rebecca", "Becky", "Jeannette", "Pati", "Holly", "Michelle", "Leslie", "Lisa", "Kelly", "Allison", "Lisa", "Lisa", "Jan", "Bijaya", "Cecily", "Shannon", "Melissa", "Veronica", "Honoria"],
 		"p": "she",
 		"gender": "girl",
 		"relation": "girlfriend"
 		},
-		{"name": ["Jeff", "Josh", "Kurt", "Zabe", "Kyle", "Matt", "Philip", "Jimmie"],
+		{"name": ["Jeff", "Josh", "Kurt", "Zabe", "Kyle", "Matt", "Philip", "Jimmie", "Alex", "Ethan", "Jon", "Christian", "Gordon", "Randall", "Bill", "Alex", "Carlos", "Derek", "Jake", "Sam", "Chris", "Jason", "Chon", "Pip", "Chad", "Tim", "Roland", "Mike", "Derrick", "Robert", "Knut"],
 		"p": "he",
 		"gender": "boy",
 		"relation": "boyfriend"
 		}],[
-		{"name": ["Casi", "Amber"],
+		{"name": ["Casi", "Amber", "Megan", "Dennaleia"],
 		"p": "she",
 		"gender": "girl",
 		"relation": "girlfriend"
 		},
-		{"name": ["Audrey", "Helen"],
+		{"name": ["Audrey", "Helen", "Terri", "Amaranthine"],
 		"p": "she",
 		"gender": "girl",
 		"relation": "girlfriend"
@@ -125,6 +125,16 @@ characters = [ [
 		"p": "he",
 		"gender": "boy",
 		"relation": "boyfriend"
+		}], [
+		{"name": ["Lila", "Elena", "Lucy", "Savannah", "Gabriella", "Callie", "Alaina", "Sophie", "Makayla", "Kennedy", "Sadie", "Skyler", "Allison", "Caroline", "Charlie", "Penelope", "Alyssa", "Peyton", "Samantha", "Liliana", "Bailey", "Maria", "Reagan", "Violet", "Eliana", "Adeline", "Eva", "Stella", "Keira", "Katherine", "Vivian", "Alice", "Alexandra", "Camilla", "Kayla", "Alexis", "Sydney", "Kaelyn", "Jasmine", "Julia", "Cora", "Lauren", "Piper", "Gianna", "Paisley", "Bella", "London", "Clara", "Cadence", "Jasmine"],
+		"p": "she",
+		"gender": "girl",
+		"relation": "sister"
+		},
+		{"name": ["Sophia", "Emma", "Olivia", "Ava", "Isabella", "Mia", "Zoe", "Lily", "Emily", "Madelyn", "Madison", "Chloe", "Charlotte", "Aubrey", "Avery", "Abigail", "Kaylee", "Layla", "Harper", "Ella", "Amelia", "Arianna", "Riley", "Aria", "Hailey", "Hannah", "Aaliyah", "Evelyn", "Addison", "Mackenzie", "Adalyn", "Ellie", "Brooklyn", "Nora", "Scarlett", "Grace", "Anna", "Isabelle", "Natalie", "Kaitlyn", "Lillian", "Sarah", "Audrey", "Elizabeth", "Leah", "Annabelle", "Kylie", "Mila", "Claire", "Victoria"],
+		"p": "she",
+		"gender": "girl",
+		"relation": "sister"
 		}]
 	]
 
@@ -174,7 +184,7 @@ story_vars["future"] = {
 	"activity": ["delivering a package to Europa", "swiming with space whales", "cleaning the solar panels"],
 	"home": ["observation tower", "apartment", "farming habitat", "dome home"],
 	"house_loc": ["on Mars", "in outer space", "on the Moon", "on a colonized asteroid", "under the ocean"],
-	"lair": ["space station", "space ship", "ice planet", "ice planet"],
+	"lair": ["space station", "space ship", "ice fortress", "ice castle", "meteor mansion"],
 	"route": ["space ship", "rocket", "monorail", "flying car", "rocket boots"],
 	"evidence": ["broken helper robot", "destroyed replicator", "frightened robomouse"],
 	"clothing": ["space suit", "helmet", "radiation visor"],
