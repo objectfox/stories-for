@@ -1,0 +1,36 @@
+{%if r[0] is equalto 1 -%}
+One time there was a {{c1.description}} {{c1.gender}} named {{c1.name}} who lived with {{p[c1.p].p}} {{c2.relation}} {{c2.name}} in {{s.home|a_or_an()}} {{s.house_loc}}.
+{%- elif r[0] is equalto 2 -%}
+Once a {{c1.gender}} named {{c1.name}}, who was very {{c1.description}}, lived in {{s.home|a_or_an()}} {{s.house_loc}} with {{p[c1.p].p}} {{c2.relation}} {{c2.name}}.
+{%- elif r[0] is equalto 3 -%}
+One time a {{c1.gender}} named {{c1.name}} lived in {{s.home|a_or_an()}} {{s.house_loc}} with {{p[c1.p].p}} {{c2.relation}} {{c2.name}}. Everyone who knew {{p[c1.p].o}} thought {{p[c1.p].s}} was very {{c1.description}}.
+{%- endif -%}{{" "}}{%- if r[1] is equalto 1 -%}
+One day while {{c1.name}} was out {{s.activity}} {{v1.title|a_or_an()}} named {{v1.name}} {{"kidnapped|captured|stole"|pipe_rand()}} {{p[c1.p].p}} {{c2.relation}} and took {{p[c2.p].o}} far away to {{p[v1.p].p}} {{s.lair}}.
+{%- elif r[1] is equalto 2 -%}
+One {{"summer|spring|fall"|pipe_rand()}} day {{c1.name}} went out {{s.activity}}. While {{p[c1.p].s}} was away, {{v1.title|a_or_an()}} named {{v1.name}} {{"kidnapped|captured|stole"|pipe_rand()}} {{c2.name}} and took {{p[c2.p].o}} to {{p[v1.p].p}} {{s.lair}}, far away.
+{%- elif r[1] is equalto 3 -%}
+One day while {{c1.name}} was {{s.activity}} and {{c2.name}} was alone, {{v1.title|a_or_an()}} named {{v1.name}} {{"kidnapped|captured|stole"|pipe_rand()}} {{p[c2.p].o}} and took {{p[c2.p].o}} to {{s.lair|a_or_an()}} a long way away.
+{%- endif%}
+{{"
+"}}
+{%- if r[2] is equalto 1 -%}
+When {{c1.name}} got home {{p[c1.p].s}} found {{s.evidence|a_or_an()}} and realized what had happened. {{p[c1.p].S}} {{"picked up|grab|took out"|pipe_rand()}} {{p[c1.p].p}} {{s.tool}}, {{"put on|pulled on"|pipe_rand()}} {{p[c1.p].p}} {{s.clothing}}, and headed out.
+{%- elif r[2] is equalto 2 -%}
+When {{c1.name}} got home from {{s.activity}} all that was left of {{c2.name}} was {{s.evidence|a_or_an()}}. Realizing what {{p[c1.p].s}} had to do, {{p[c1.p].s}} {{"picked up|grab|took out"|pipe_rand()}} {{p[c1.p].p}} {{"trusty|sturdy|well worn"|pipe_rand()}} {{s.tool}}, {{"put on|pulled on"|pipe_rand()}} a {{"red|striped|green"|pipe_rand()}} {{s.clothing}}, and set off.
+{%- elif r[2] is equalto 3 -%}
+When {{c1.name}} came home all that {{p[c1.p].s}} found was {{s.evidence|a_or_an()}}. Determined to rescue {{p[c1.p].p}} {{c2.relation}}, {{p[c1.p].s}} {{"put on|pulled on"|pipe_rand()}} {{p[c1.p].p}} {{"blue|grey|traveling"|pipe_rand()}} {{s.clothing}}, found {{p[c1.p].p}} {{s.tool}}, and went forth.
+{%- endif -%}{{" "}}{%- if r[3] is equalto 1 -%}
+{{p[c1.p].S}} took {{s.route|a_or_an()}} to the {{v1.title}}'s lair, and on {{p[c1.p].p}} way {{c1.name}} met {{s.traveller}} who gave {{p[c1.p].o}} {{s.road_help}}. When {{c1.name}} finally got to {{v1.name}}'s {{s.lair}}, {{p[c1.p].s}} took off {{p[c1.p].p}} {{s.clothing}} and {{"snuck|crept"|pipe_rand()}} inside.
+{%- elif r[3] is equalto 2 -%}
+While traveling on {{s.route|a_or_an()}} to the {{v1.title}}'s {{s.lair}}, {{c1.name}} came across {{s.traveller}} who offered {{p[c1.p].o}} {{s.road_help}}. After traveling for a long time, {{c1.name}} arrived at {{v1.name}}'s {{s.lair}}. {{p[c1.p].S}} took off {{p[c1.p].p}} {{s.clothing}} and {{"snuck|crept"|pipe_rand()}} in carefully.
+{%- elif r[3] is equalto 3 -%}
+On {{p[c1.p].p}} way to {{v1.title}}'s {{s.lair}} on {{s.route|a_or_an()}}, {{c1.name}} came across {{s.traveller}}. They offered {{p[c1.p].o}} {{s.road_help}}, which {{p[c1.p].s}} accepted gratefully. After traveling for a long time, {{c1.name}} arrived at {{v1.name}}'s {{s.lair}}. Being careful to be quiet, {{p[c1.p].s}} {{"snuck|crept"|pipe_rand()}} into the dangerous lair.
+{%- endif%}
+
+{%if r[4] is equalto 1 -%}
+{{v1.name}} had {{c1.name}}'s {{c2.relation}}, {{c2.name}}, in {{s.prison|a_or_an()}}, and was {{s.evil_activity}}. {{c1.name}} used {{p[c1.p].p}} {{s.tool}} and freed {{c2.name}}. Together they defeated the {{v1.title}}, escaped the {{s.lair}}, and made their way safely back home.
+{%elif r[4] is equalto 2 -%}
+Deep in the {{s.lair}}, {{c2.name}} was locked in {{s.prison|a_or_an()}}. Nearby, {{v1.name}} was {{s.evil_activity}}. {{c1.name}} distracted {{v1.name}} with {{p[c1.p].p}} {{s.tool}} and broke {{c2.name}} out of the {{s.prison}}. Reunited with {{p[c1.p].p}} {{c2.relation}}, {{c1.name}} and {{c2.name}} defeated {{v1.name}} with {{"a swift kick|a double punch|a clever riddle|teamwork"|pipe_rand()}}. Then they left {{s.lair}} and headed home, victorious.
+{%elif r[4] is equalto 3 -%}
+{{c1.name}} found {{p[c1.p].p}} {{c2.relation}}, {{c2.name}}, in {{s.prison|a_or_an()}}. Freeing {{p[c2.p].o}}, they searched together and eventually found {{v1.name}} {{s.evil_activity}}. {{c1.name}} used {{p[c1.p].p}} {{s.tool}} and defeated the {{v1.title}}. {{"Victorious|Triumphant|Their enemy beaten|Happily reunited"|pipe_rand()}}, {{c1.name}} and {{c2.name}} left the {{s.lair}}, and headed off on the {{s.route}} home.
+{%endif%}
